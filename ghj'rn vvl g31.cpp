@@ -9,13 +9,13 @@ enum home_screen
 int main()
 {
     int player;
-    char pasword[15];
+    char pasword[15] = "qweq";
 
     do {
         std::cout << "Welcome to our project" << std::endl;
         std::cout << "Play - 1" << std::endl;
         std::cout << "quit - 2" << std::endl;
-        std::cin >> pasword;
+        std::cin >> player;
 
         switch (player){
         case PLAY: {
@@ -24,8 +24,11 @@ int main()
         case QUIT: {
             break;
         }
+        default:
+            std::cout << "qweqweqwe";
         }
 
 
     } while (player != 2);
+    return 0;
 }
