@@ -2,8 +2,8 @@
 
 enum home_screen
 {
-    PLAY = 1,
-    QUIT = 2
+    PLAY = 80,
+    QUIT = 81
 };
 
 void dead(int q) {
@@ -14,13 +14,13 @@ void dead(int q) {
 
 int main()
 {
-    int player;
+    char player;
     char pasword[15] = "qweq";
 
     do {
         std::cout << "Welcome to our project" << std::endl;
-        std::cout << "Play - 1" << std::endl;
-        std::cout << "quit - 2" << std::endl;
+        std::cout << "Play - p" << std::endl;
+        std::cout << "quit - q" << std::endl;
         std::cin >> player;
 
         switch (player){
