@@ -6,6 +6,12 @@ enum home_screen
     QUIT = 2
 };
 
+void dead(int q) {
+    if (q == 0) {
+        std::cout << "you are dead. want to be reborn?";
+    }
+}
+
 int main()
 {
     int player;
@@ -20,6 +26,8 @@ int main()
         switch (player){
         case PLAY: {
             //хубабуба мяумяумяу
+            std::cout << "sorry there's nothing here yet";
+            break;
         }
         case QUIT: {
             break;
@@ -30,5 +38,6 @@ int main()
 
 
     } while (player != 2);
-    return 0;
+
+
 }
