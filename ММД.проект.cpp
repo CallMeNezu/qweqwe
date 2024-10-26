@@ -5,25 +5,23 @@ enum home_screen
     PLAY = 112,
     QUIT = 113
 };
-/*
-void dead(int q) {
-    if (q == 0) {
-        std::cout << "you are dead. want to be reborn?";
-    }
-}
-*/
+struct player {
+    int heal;
+    int strong;
+    int charisma;
+
+};
 int main()
 {
-    char player;
-    char pasword[15] = "qweq";
+    char start;
 
     do {
         std::cout << "Welcome to our project" << std::endl;
         std::cout << "Play - p" << std::endl;
         std::cout << "quit - q" << std::endl;
-        std::cin >> player;
+        std::cin >> start;
 
-        switch (player) {
+        switch (start) {
         case PLAY: {
             //хубабуба мяумяумяу
             std::cout << "background....\n";
@@ -50,7 +48,7 @@ int main()
         }
 
 
-    } while (player != 'q' && player != 'p');//всё до этой строчки нач экран 
+    } while (start != 'q' && start != 'p');//всё до этой строчки нач экран 
     std::cout << "\ncheck";
 
 }
