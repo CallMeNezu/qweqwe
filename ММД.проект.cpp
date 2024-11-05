@@ -1,12 +1,12 @@
-﻿#include <iostream>
-#include "windows.h" 
+﻿﻿#include <iostream>
+#include "windows.h"
+#include "buttoms.cpp"//открыть статистику кнопочкой 
 enum home_screen
 {
     PLAY = 112,
     QUIT = 113,
-    STATISTICS = 105
 };
-struct stats {
+struct stats {//статистика
     char name[20];
     int heal;
     int strong;
@@ -15,6 +15,7 @@ struct stats {
 };
 int main()
 {
+    
     char start;
     do {
         std::cout << "Welcome to our project" << std::endl;
@@ -44,10 +45,10 @@ int main()
             return 0;
         }
         default:
-            std::cout << "qweqweqwe";
+            std::cout << "nope ";
         }
     } while (start != 'q' && start != 'p');//всё до этой строчки нач экран 
-    
+
     std::cout << "\nwhat is your name?\n";
     stats player;
     player.name;
@@ -56,5 +57,6 @@ int main()
     player.charisma = 25;
     player.healing = 25;
     std::cin >> player.name;
-
+    int points = 99;
+    interface_buttons(player.heal, player.strong, player.charisma, player.healing);
 }
