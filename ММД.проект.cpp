@@ -15,7 +15,7 @@ struct stats {//статистика
 };
 int main()
 {
-    
+
     char start;
     do {
         std::cout << "Welcome to our project" << std::endl;
@@ -53,10 +53,10 @@ int main()
     stats player;
     player.name;
     player.heal = 100;
-    player.strong = 100;
+    player.strong = 50;
     player.charisma = 25;
     player.healing = 25;
     std::cin >> player.name;
     int points = 99;
-    interface_buttons(player.heal, player.strong, player.charisma, player.healing);
+    interface_buttons(player.heal, player.strong, player.charisma, player.healing, points);
 }
